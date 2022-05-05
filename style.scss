@@ -1,0 +1,48 @@
+$center-align: center;
+$position-relative:relative;
+$margin-0:0px;
+$auto-margin:auto;
+$px-150:150px;
+$px-400:400px;
+$px-300:300px;
+$px-30:30px;
+$border-5:5px solid;
+
+body {
+    text-align: $center-align;
+    background-color: yellowgreen;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+  from {background-color: blue;}
+  to {background-color: green;}
+}
+#container {        
+    position: $position-relative;
+    top: $px-150;
+    width: $px-400;
+    height: $px-300;
+    margin-left: $auto-margin;
+    margin-right: $auto-margin;
+    border: $border-5;
+    animation-name: move;
+    animation-duration: 4s;
+}
+@keyframes move {
+    0%   {background-color:blue; left:100px; top:100px;}
+    25%  {background-color:rgb(84, 84, 222); left:200px; top:0px;}
+    50%  {background-color:green; left:200px; top:200px;}
+    75%  {background-color:rgb(142, 205, 16); left:0px; top:200px;}
+    100% {background-color:yellowgreen; left:0px; top:150px;}
+  }
+#details{
+    position: $position-relative;
+    top: $px-30;
+}
+.names{
+    margin-bottom: $margin-0;
+    margin-top: $margin-0;
+}
+
+

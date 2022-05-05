@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  background-color: yellowgreen;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+#container {
+  position: relative;
+  top: 150px;
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+  25% {
+    background-color: #5454de;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: green;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: #8ecd10;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: yellowgreen;
+    left: 0px;
+    top: 150px;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+  25% {
+    background-color: #5454de;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: green;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: #8ecd10;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: yellowgreen;
+    left: 0px;
+    top: 150px;
+  }
+}
+
+#details {
+  position: relative;
+  top: 30px;
+}
+
+.names {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/*# sourceMappingURL=style.css.map */
